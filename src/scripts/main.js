@@ -42,6 +42,7 @@ function getEmployees(list) {
 }
 
 getEmployees(getList);
+
 sortList(getList);
 
 ul.replaceWith(...getList);
