@@ -24,7 +24,7 @@ function toNumber(str) {
   return +result;
 }
 
-function getEmloyees(list) {
+function getEmployees(list) {
   const employeesArr = [];
 
   for (const employee of list) {
@@ -41,7 +41,7 @@ function getEmloyees(list) {
   return employeesArr;
 }
 
-getEmloyees(getList);
+getEmployees(getList);
 sortList(getList);
 
 ul.replaceWith(...getList);
