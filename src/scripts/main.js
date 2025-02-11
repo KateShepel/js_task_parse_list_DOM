@@ -24,6 +24,24 @@ function toNumber(str) {
   return +result;
 }
 
+function getEmloyees(list) {
+  const employeesArr = [];
+
+  for (const employee of list) {
+    const newObj = {
+      name: employee.innerText,
+      position: employee.dataset.position,
+      salary: employee.dataset.salary,
+      age: employee.dataset.age,
+    };
+
+    employeesArr.push(newObj);
+  }
+
+  return employeesArr;
+}
+
+getEmloyees(getList);
 sortList(getList);
 
 ul.replaceWith(...getList);
